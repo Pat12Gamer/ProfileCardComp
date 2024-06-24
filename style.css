@@ -9,6 +9,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+  backdrop-filter: blur(5px);
 
   font-family: Montserrat, sans-serif;
   display: flex;
@@ -25,7 +26,6 @@ body {
   width: 100%;
   background: #fff;
   border-radius: 24px;
-  padding: 25px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   position: relative;
 }
@@ -38,9 +38,9 @@ body {
   height: 30%;
   width: 100%;
   border-radius: 24px 24px 0 0;
-  background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23dfab);
+  background: linear-gradient(45deg, #f48e21, #6753ff, #12db76, #f75e21);
   background-size: 300%, 300%;
-  animation: color 12s ease-in-out infinite;
+  animation: color 15s ease-in-out infinite;
 }
 
 @keyframes color {
@@ -63,7 +63,7 @@ body {
   border-radius: 50%;
   background-color: #4070f4;
   padding: 3px;
-  background: linear-gradient(270deg, #d2001a, #7462ff, #f48e21, #23dfab);
+  background: linear-gradient(270deg, #dd031c, #6753ff, #f48e21, #23dfab);
   background-size: 100%, 100%;
   border-radius: 90px;
   border: 7px solid white;
@@ -96,10 +96,16 @@ body {
 
 .skills {
   position: relative;
-  background-color: #2c0db8;
   text-align: left;
   padding: 15px;
-  margin-top: 30px;
+  margin-top: 20px;
+  border-radius: 0 0 24px 24px;
+  background-color: #433872;
+}
+
+h4{
+  text-align: center;
+  color: white;
 }
 
 .skills ul {
@@ -109,11 +115,11 @@ body {
 }
 
 .skills ul li {
-  border: 1px solid #2d2747;
-  background-color: #23dfab;
+  border: 1px solid #161422;
   border-radius: 2px;
   display: inline-block;
   font-size: 12px;
   margin: 0 7px 7px 0;
   padding: 7px;
+ color: white;
 }
